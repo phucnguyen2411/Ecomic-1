@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Ecomic-1</display-name>
+  <welcome-file-list>
+    <welcome-file>/jsp/login.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>userDB</param-name>
+    <param-value>root</param-value>
+  </context-param>
+  <context-param>
+    <param-name>passDB</param-name>
+    <param-value></param-value>
+  </context-param>
+  <context-param>
+    <param-name>pathDB</param-name>
+    <param-value>jdbc:mysql://localhost/t3h_ecommerce</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>checkLogin</servlet-name>
+    <servlet-class>com.phucng.controler.checkLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>checkLogin</servlet-name>
+    <url-pattern>/checkLogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>listproIndex</servlet-name>
+    <servlet-class>com.phucng.controler.listProduct</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>listproIndex</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+</web-app>
